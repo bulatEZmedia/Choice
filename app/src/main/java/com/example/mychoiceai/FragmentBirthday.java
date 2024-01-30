@@ -36,7 +36,8 @@ public class FragmentBirthday extends Fragment {
                 dpd = new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker datePicker, int mYear, int mMonth, int mDay) {
-                        String birthday1 = mDay + "." + mMonth + "." + mYear;
+                        int mMonth1 = mMonth + 1;
+                        String birthday1 = mDay + "." + mMonth1 + "." + mYear;
                         Bundle bundle = getArguments();
                         bundle.putString("birthday", birthday1);
                         Navigation.findNavController(view).navigate(R.id.action_fragmentBirthday_to_fragmentLogin, bundle);
@@ -45,6 +46,38 @@ public class FragmentBirthday extends Fragment {
                 dpd.show();
             }
         });
+
+        /* String password = editTextPassword.getText().toString().trim();
+
+                String gender = getArguments().getString("gender");
+                String birthday = getArguments().getString("birthday");
+                String login = getArguments().getString("login");
+                String name = getArguments().getString("name");
+                String email = getArguments().getString("email");
+
+                retrofit2.Call<ResponseBody> call = RetrofitClient
+                        .getInstance()
+                        .getApi()
+                        .register(gender, birthday, login, name, email, password);
+                call.enqueue(new Callback<ResponseBody>() {
+                    @Override
+                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                        try {
+                            String userId = response.body().string();
+                            Bundle bundle = getArguments();
+                            bundle.putString("user_id", userId);
+                            Navigation.findNavController(view).navigate(R.id.action_fragmentPassword_to_fragmentQuestion1, bundle);
+                        }
+                        catch (Exception e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+                    }
+                });*/
 
 
 

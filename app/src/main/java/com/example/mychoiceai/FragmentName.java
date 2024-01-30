@@ -28,7 +28,7 @@ public class FragmentName extends Fragment {
                 String name = editTextName.getText().toString().trim();
                 Bundle bundle = getArguments();
                 bundle.putString("name", name);
-                Navigation.findNavController(view).navigate(R.id.action_fragmentName_to_fragmentEmail, bundle);
+                // Navigation.findNavController(view).navigate(R.id.action_fragmentName_to_fragmentPassword, bundle);
             }
         });
 

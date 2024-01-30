@@ -27,7 +27,7 @@ public class FragmentGender extends Fragment {
             @Override
             public void onClick(View view) {
                 man1 = "М";
-                Bundle bundle = new Bundle();
+                Bundle bundle = getArguments();
                 bundle.putString("gender", man1);
                 Navigation.findNavController(view).navigate(R.id.action_fragmentGender_to_fragmentBirthday, bundle);
             }

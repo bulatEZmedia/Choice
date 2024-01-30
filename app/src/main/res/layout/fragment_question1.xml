@@ -2,60 +2,54 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentGender">
+    tools:context=".FragmentQuestion1">
 
+    <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:text="Ваш пол"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:layout_marginTop="148dp"
+        android:text="Какая главная цель?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/man1"
-        android:layout_width="330dp"
-        android:layout_height="59dp"
-        android:background="@drawable/rectangle2"
-        android:text="Мужской"
-        android:textColor="#F7F8FA"
-        app:backgroundTint="#2C2C2E"
-        app:cornerRadius="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="#54585C"
-        tools:layout_editor_absoluteY="484dp" />
-
     <Button
-        android:id="@+id/man"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="356dp"
-        android:text="Мужской"
-        android:background="@drawable/rectangle1"
+        android:layout_marginTop="468dp"
+        android:background="#000000"
+        android:backgroundTint="@color/purple_200"
+        android:foregroundTint="#000000"
+        android:text="Быть в форме"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/woman"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="356dp"
-        android:text="Женский"
+        android:layout_marginTop="384dp"
+        android:text="Нарастить мышцы"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="304dp"
+        android:text="Похудеть"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
