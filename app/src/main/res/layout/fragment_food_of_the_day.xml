@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentFoodOfTheDay">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/then14"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="348dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#54585C"
+        android:text="Далее"
+        android:textColor="#AAAFB4"
+        app:cornerRadius="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/bar10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="288dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:text="Как вы питаетесь?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="350dp"
+        android:layout_height="430dp"
+        android:layout_marginStart="50dp"
+
+        android:layout_marginTop="-100dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23">
+
+
+        <RadioButton
+            android:id="@+id/dessert"
+
+            android:layout_width="350dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/dessert"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="70dp"
+            android:text="Ем сладкое постоянно"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <RadioButton
+            android:id="@+id/no_sugar"
+            android:layout_width="350dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/nosugar"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="60dp"
+            android:text="Стараюсь не есть сахар"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <RadioButton
+            android:id="@+id/fast_food"
+            android:layout_width="350dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/fastfood"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="110dp"
+            android:text="Люблю фаст фуд"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <RadioButton
+            android:id="@+id/vegan"
+            android:layout_width="350dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/vegan"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="200dp"
+            android:text="Веган"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            android:textSize="15sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <RadioButton
+            android:id="@+id/diet"
+            android:layout_width="350dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/diet"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="110dp"
+            android:text="Соблюдаю диету"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <RadioButton
+            android:id="@+id/not_important"
+            android:layout_width="350dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/notimportant"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="160dp"
+            android:text="Не важно"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

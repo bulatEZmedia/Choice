@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class FragmentName extends Fragment {
@@ -20,15 +21,21 @@ public class FragmentName extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_name, container, false);
-        editTextName = view.findViewById(R.id.name);
-        Button then2 = view.findViewById(R.id.then2);
+        editTextName = view.findViewById(R.id.editTextName);
+        Button then2 = view.findViewById(R.id.then7);
         then2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String name = editTextName.getText().toString().trim();
-                Bundle bundle = getArguments();
-                bundle.putString("name", name);
-                // Navigation.findNavController(view).navigate(R.id.action_fragmentName_to_fragmentPassword, bundle);
+                try {
+                    String name = editTextName.getText().toString().trim();
+                    Toast.makeText(getActivity(), name, Toast.LENGTH_SHORT).show();
+                    Bundle bundle = getArguments();
+                    bundle.putString("name", name);
+                    Navigation.findNavController(view).navigate(R.id.action_fragmentName_to_fragmentGender, bundle);
+                }
+                catch (Exception e){
+                    throw new RuntimeException(e);
+                }
             }
         });
 

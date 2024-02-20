@@ -52,39 +52,47 @@ public class FragmentEmail extends Fragment {
         then3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String email = editTextEmail.getText().toString().trim();
+                if(editTextEmail.getText().toString().length() == 0){
+                    editTextEmail.setError("Заполните email");
+                }
+                else {
+                    String email = editTextEmail.getText().toString().trim();
 
-                retrofit2.Call<ResponseBody> call = RetrofitClient
-                        .getInstance()
-                        .getApi()
-                        .email_checking(email);
-                call.enqueue(new Callback<ResponseBody>() {
-                    @Override
-                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                        try {
-                            String userId = response.body().string();
-                            int num = Integer.parseInt(userId);
-                            if(num == 0){
-                                Navigation.findNavController(view).navigate(R.id.action_fragmentEmail_to_fragmentPasswordRegister);
-                            }
-                            else {
-                                Bundle bundle = new Bundle();
-                                bundle.putString("user_id", userId);
-                                Navigation.findNavController(view).navigate(R.id.action_fragmentEmail_to_fragmentPasswordAuthorization, bundle);
+                    retrofit2.Call<ResponseBody> call = RetrofitClient
+                            .getInstance()
+                            .getApi()
+                            .email_checking(email);
+                    call.enqueue(new Callback<ResponseBody>() {
+                        @Override
+                        public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                            try {
+                                String userId = response.body().string();
+                                int num = Integer.parseInt(userId);
+                                if (num == 0) {
+                                    Bundle bundle = new Bundle();
+                                    bundle.putString("email", email);
+                                    Navigation.findNavController(view).navigate(R.id.action_fragmentEmail_to_fragmentPasswordRegister, bundle);
+                                }
+                                else if(num == -1){
+                                    editTextEmail.setError("Введите почту правильно");
+                                }
+                                else {
+                                    Bundle bundle = new Bundle(); // new Bundle?
+                                    bundle.putString("user_id", userId);
+                                    Navigation.findNavController(view).navigate(R.id.action_fragmentEmail_to_fragmentPasswordAuthorization, bundle);
 
+                                }
+                            } catch (Exception e) {
+                                throw new RuntimeException(e);
                             }
                         }
-                        catch (Exception e) {
-                            throw new RuntimeException(e);
+
+                        @Override
+                        public void onFailure(Call<ResponseBody> call, Throwable t) {
+
                         }
-                    }
-
-                    @Override
-                    public void onFailure(Call<ResponseBody> call, Throwable t) {
-
-                    }
-                });
-
+                    });
+                }
             }
         });
         return view;

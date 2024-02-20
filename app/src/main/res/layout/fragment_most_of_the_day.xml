@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentMostOfTheDay">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/then13"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="348dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#54585C"
+        android:text="Далее"
+        android:textColor="#AAAFB4"
+        app:cornerRadius="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/bar9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="292dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:text="Как вы проводите большую часть дня?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-50dp"
+
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22">>
+
+        <RadioButton
+            android:id="@+id/office"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/office"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="180dp"
+            android:text="В офисе"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/walk_every_day"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/walkeveryday"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="90dp"
+            android:text="Хожу каждый день"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/active_training"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/activetraining"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="80dp"
+            android:text="Активно тренируюсь"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/sitting_home"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/sittinghome"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="150dp"
+            android:text="Сижу дома"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

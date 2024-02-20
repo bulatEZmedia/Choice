@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentPhysActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/then16"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="348dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#54585C"
+        android:text="Далее"
+        android:textColor="#AAAFB4"
+        app:cornerRadius="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/bar11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="286dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="28dp"
+        android:text="Насколько вы физически активны в неделю?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup6"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="50dp"
+
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25">
+
+        <RadioButton
+            android:id="@+id/not_strain"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="90dp"
+            android:text="Особо не напрягаюсь офисе"
+            android:textAlignment="textStart"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/one_two"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="180dp"
+            android:text="1-2 тренировки"
+            android:textAlignment="textStart"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/three_five"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="80dp"
+            android:text="3-5 тренировок"
+            android:textAlignment="textStart"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/five_seven"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="150dp"
+            android:text="5-7 тренировок"
+            android:textAlignment="textStart"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

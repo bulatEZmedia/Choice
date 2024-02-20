@@ -31,7 +31,7 @@ public class FragmentLogin extends Fragment {
                 String login = editTextLogin.getText().toString().trim();
                 Bundle bundle = getArguments();
                 bundle.putString("login", login);
-                Navigation.findNavController(view).navigate(R.id.action_fragmentLogin_to_fragmentName, bundle);
+                //Navigation.findNavController(view).navigate(R.id.action_fragmentLogin_to_fragmentName, bundle);
             }
         });
 

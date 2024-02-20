@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentBodyPart">
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/human"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <CheckBox
+        android:id="@+id/belly"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/rectangle2"
+        android:button="@drawable/custom_checkbox"
+        android:layoutDirection="rtl"
+        android:text="Живот"
+        android:textAlignment="center"
+        android:textColor="#F7F8FA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <CheckBox
+        android:id="@+id/spine"
+        android:layout_width="102dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle2"
+        android:button="@drawable/custom_checkbox"
+        android:layoutDirection="rtl"
+        android:text="Спина"
+        android:textAlignment="center"
+        android:textColor="#F7F8FA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <CheckBox
+        android:id="@+id/buttocks"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/rectangle2"
+        android:button="@drawable/custom_checkbox"
+        android:layoutDirection="rtl"
+        android:text="Ягодицы"
+        android:textAlignment="center"
+        android:textColor="#F7F8FA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <CheckBox
+        android:id="@+id/breast"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rectangle2"
+        android:button="@drawable/custom_checkbox"
+        android:layoutDirection="rtl"
+        android:text="Грудь"
+        android:textAlignment="center"
+        android:textColor="#F7F8FA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <CheckBox
+        android:id="@+id/legs"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="268dp"
+        android:background="@drawable/rectangle2"
+        android:button="@drawable/custom_checkbox"
+        android:layoutDirection="rtl"
+        android:text="Ноги"
+        android:textAlignment="center"
+        android:textColor="#F7F8FA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/then100"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="348dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#54585C"
+        android:text="Далее"
+        android:textColor="#AAAFB4"
+        app:cornerRadius="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+    <CheckBox
+        android:id="@+id/hands"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/rectangle2"
+        android:button="@drawable/custom_checkbox"
+        android:layoutDirection="rtl"
+        android:text="Руки"
+        android:textAlignment="center"
+        android:textColor="#F7F8FA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/bar8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="245dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="52dp"
+        android:text="Какую часть тела вы бы хотели улучшить?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

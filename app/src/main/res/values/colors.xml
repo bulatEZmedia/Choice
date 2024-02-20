@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="beforeTextForButton">#DEFA2C</color>
     <color name="beforeTextForText">#192126</color>
+    <color name="progress">#192126</color>
 </resources>

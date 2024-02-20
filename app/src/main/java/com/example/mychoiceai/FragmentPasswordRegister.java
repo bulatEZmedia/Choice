@@ -3,6 +3,7 @@ package com.example.mychoiceai;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,13 +25,12 @@ public class FragmentPasswordRegister extends Fragment {
         EditText editTextPassword1 = view.findViewById(R.id.editTextPassword1);
         EditText editTextPassword2 = view.findViewById(R.id.editTextPassword2);
         Button then6 = view.findViewById(R.id.then6);
-        String password1 = editTextPassword1.getText().toString().trim();
-        String password2 = editTextPassword2.getText().toString().trim();
+
         TextInputLayout passwordLayout1 = view.findViewById(R.id.layoutTextPassword1);
         TextInputLayout passwordLayout2 = view.findViewById(R.id.layoutTextPassword2);
 
 
-        editTextPassword1.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        /*editTextPassword1.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
                 passwordLayout1.setHelperText(validPassword());
@@ -42,13 +42,23 @@ public class FragmentPasswordRegister extends Fragment {
                 }
                 return null;
             }
-        });
+        });*/
 
         then6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (password1.length() >= 8){
-                    passwordLayout1.setError("Введите 8 символов");
+                String password1 = editTextPassword1.getText().toString().trim();
+                String password2 = editTextPassword2.getText().toString().trim();
+                if (password1.length() <= 8 ){
+                    editTextPassword1.setError("Введите 8 символов");
+                }
+                //if(!password1.equals(password2)){
+                  //  editTextPassword2.setError("Пароли не совпадают");
+                //}
+                else{
+                    Bundle bundle = getArguments();
+                    bundle.putString("password", password1);
+                    Navigation.findNavController(view).navigate(R.id.action_fragmentPasswordRegister_to_fragmentName, bundle);
                 }
 
             }

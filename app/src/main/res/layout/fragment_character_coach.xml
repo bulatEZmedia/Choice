@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentCharacterCoach"
+    android:background="#151718">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/then25"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="383dp"
+                android:layout_height="147dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#2C2C2E"
+                android:paddingTop="4dp"
+                android:paddingBottom="100dp"
+                android:text="Характер"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#F7F8FA"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="383dp"
+                android:layout_height="148dp"
+                android:layout_marginTop="48dp"
+                android:src="@drawable/waves"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Настрой характер своего тренера"
+                android:textColor="#F7F8FA"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/then25"
+                app:layout_constraintTop_toTopOf="@+id/then25" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

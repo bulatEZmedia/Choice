@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentBadHabits">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/then15"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="348dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#54585C"
+        android:text="Далее"
+        android:textColor="#AAAFB4"
+        app:cornerRadius="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/bar11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="211dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="32dp"
+        android:text="Какие у вас есть  вредные привычки?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="50dp"
+
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24">
+
+
+        <RadioButton
+            android:id="@+id/sleep"
+
+            android:layout_width="350dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/sleep"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="70dp"
+            android:text="  Мало сплю"
+            android:textAlignment="textStart"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <RadioButton
+            android:id="@+id/like_dessert"
+            android:layout_width="350dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/chocolate"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="60dp"
+            android:text="  Я люблю сладкое"
+            android:textAlignment="textStart"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <RadioButton
+            android:id="@+id/bad_drink"
+            android:layout_width="350dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/bad_drink"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="110dp"
+            android:text="  Вредные напитки"
+            android:textAlignment="textStart"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <RadioButton
+            android:id="@+id/eat_night"
+            android:layout_width="350dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/likeeatnight"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:text="  Люблю есть ночью"
+            android:textAlignment="textStart"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" />
+
+        <RadioButton
+            android:id="@+id/nothing"
+            android:layout_width="350dp"
+            android:layout_height="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle2"
+            android:drawableLeft="@drawable/no"
+            android:layoutDirection="rtl"
+            android:paddingLeft="15dp"
+            android:paddingRight="110dp"
+            android:text="  Ничего из этого"
+            android:textAlignment="textStart"
+            android:textColor="#F7F8FA"
+            android:textSize="16sp"
+            android:theme="@style/MyRadioButton"></RadioButton>
+
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

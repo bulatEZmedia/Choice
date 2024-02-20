@@ -24,7 +24,7 @@ public class FragmentStart extends Fragment {
         then.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action_fragmentStart_to_fragmentGender);
+                //Navigation.findNavController(view).navigate(R.id.action_fragmentStart_to_fragmentGender);
             }
         });
         return view;

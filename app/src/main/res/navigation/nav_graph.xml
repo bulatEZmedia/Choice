@@ -3,37 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragmentEmail">
+    app:startDestination="@id/fragmentTrainingDone">
 
-    <fragment
-        android:id="@+id/fragmentStart"
-        android:name="com.example.mychoiceai.FragmentStart"
-        android:label="fragment_start"
-        tools:layout="@layout/fragment_start" />
     <fragment
         android:id="@+id/fragmentGender"
         android:name="com.example.mychoiceai.FragmentGender"
         android:label="fragment_gender"
-        tools:layout="@layout/fragment_gender" />
+        tools:layout="@layout/fragment_gender" >
+        <action
+            android:id="@+id/action_fragmentGender_to_fragmentBirthday"
+            app:destination="@id/fragmentBirthday" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentBirthday"
         android:name="com.example.mychoiceai.FragmentBirthday"
         android:label="fragment_birthday"
         tools:layout="@layout/fragment_birthday" >
-        <action
-            android:id="@+id/action_fragmentBirthday_to_fragmentLogin"
-            app:destination="@id/fragmentLogin" />
         <argument android:name="gender"
             app:argType="string" />
-    </fragment>
-    <fragment
-        android:id="@+id/fragmentLogin"
-        android:name="com.example.mychoiceai.FragmentLogin"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
-        <argument
-            android:name="b"
-            app:argType="string" />
+        <action
+            android:id="@+id/action_fragmentBirthday_to_fragmentHeight"
+            app:destination="@id/fragmentHeight" />
     </fragment>
     <fragment
         android:id="@+id/fragmentName"
@@ -43,6 +36,9 @@
         <action
             android:id="@+id/action_fragmentName_to_fragmentGender"
             app:destination="@id/fragmentGender" />
+        <argument
+            android:name="password"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/fragmentEmail"
@@ -57,23 +53,6 @@
             app:destination="@id/fragmentPasswordAuthorization" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentQuestion1"
-        android:name="com.example.mychoiceai.FragmentQuestion1"
-        android:label="fragment_question1"
-        tools:layout="@layout/fragment_question1" >
-        <argument
-            android:name="userId"
-            app:argType="string" />
-        <action
-            android:id="@+id/action_fragmentQuestion1_to_fragmentRegisterDone"
-            app:destination="@id/fragmentRegisterDone" />
-    </fragment>
-    <fragment
-        android:id="@+id/fragmentQuestion2"
-        android:name="com.example.mychoiceai.FragmentQuestion2"
-        android:label="fragment_question2"
-        tools:layout="@layout/fragment_question2" />
-    <fragment
         android:id="@+id/fragmentRegisterDone"
         android:name="com.example.mychoiceai.FragmentRegisterDone"
         android:label="fragment_register_done"
@@ -86,6 +65,9 @@
         <action
             android:id="@+id/action_fragmentPasswordRegister_to_fragmentName"
             app:destination="@id/fragmentName" />
+        <argument
+            android:name="email"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/fragmentPasswordAuthorization"
@@ -108,4 +90,228 @@
             android:id="@+id/action_fragmentBeforeTest_to_fragmentName"
             app:destination="@id/fragmentName" />
     </fragment>
+    <fragment
+        android:id="@+id/fragmentHeight"
+        android:name="com.example.mychoiceai.FragmentHeight"
+        android:label="fragment_height"
+        tools:layout="@layout/fragment_height" >
+        <action
+            android:id="@+id/action_fragmentHeight_to_fragmentCurrentWeight"
+            app:destination="@id/fragmentCurrentWeight" />
+        <argument
+            android:name="user_id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCurrentWeight"
+        android:name="com.example.mychoiceai.FragmentCurrentWeight"
+        android:label="fragment_current_weight"
+        tools:layout="@layout/fragment_current_weight" >
+        <action
+            android:id="@+id/action_fragmentCurrentWeight_to_fragmentDesiredWeight"
+            app:destination="@id/fragmentDesiredWeight" />
+        <argument
+            android:name="height"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDesiredWeight"
+        android:name="com.example.mychoiceai.FragmentDesiredWeight"
+        android:label="fragment_desired_weight"
+        tools:layout="@layout/fragment_desired_weight" >
+        <action
+            android:id="@+id/action_fragmentDesiredWeight_to_fragmentPhysicalLimitations"
+            app:destination="@id/fragmentPhysicalLimitations" />
+        <argument
+            android:name="currentWeight"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPhysicalLimitations"
+        android:name="com.example.mychoiceai.FragmentPhysicalLimitations"
+        android:label="fragment_physical_limitations"
+        tools:layout="@layout/fragment_physical_limitations" >
+        <action
+            android:id="@+id/action_fragmentPhysicalLimitations_to_fragmentBody"
+            app:destination="@id/fragmentBody" />
+        <argument
+            android:name="desiredWeight"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBody"
+        android:name="com.example.mychoiceai.FragmentBody"
+        android:label="fragment_body"
+        tools:layout="@layout/fragment_body" >
+        <action
+            android:id="@+id/action_fragmentBody_to_fragmentBodyPart"
+            app:destination="@id/fragmentBodyPart" />
+        <argument
+            android:name="physicalLimitations"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBodyPart"
+        android:name="com.example.mychoiceai.FragmentBodyPart"
+        android:label="fragment_body_part"
+        tools:layout="@layout/fragment_body_part" >
+        <action
+            android:id="@+id/action_fragmentBodyPart_to_fragmentMostOfTheDay"
+            app:destination="@id/fragmentMostOfTheDay" />
+        <argument
+            android:name="body"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMostOfTheDay"
+        android:name="com.example.mychoiceai.FragmentMostOfTheDay"
+        android:label="fragment_most_of_the_day"
+        tools:layout="@layout/fragment_most_of_the_day" >
+        <action
+            android:id="@+id/action_fragmentMostOfTheDay_to_fragmentFoodOfTheDay"
+            app:destination="@id/fragmentFoodOfTheDay" />
+        <argument
+            android:name="bodyPart"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFoodOfTheDay"
+        android:name="com.example.mychoiceai.FragmentFoodOfTheDay"
+        android:label="fragment_food_of_the_day"
+        tools:layout="@layout/fragment_food_of_the_day" >
+        <action
+            android:id="@+id/action_fragmentFoodOfTheDay_to_fragmentBadHabits"
+            app:destination="@id/fragmentBadHabits" />
+        <argument
+            android:name="mostOfTheDay"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBadHabits"
+        android:name="com.example.mychoiceai.FragmentBadHabits"
+        android:label="fragment_bad_habits"
+        tools:layout="@layout/fragment_bad_habits" >
+        <action
+            android:id="@+id/action_fragmentBadHabits_to_fragmentPhysActivity"
+            app:destination="@id/fragmentPhysActivity" />
+        <argument
+            android:name="foodOfTheDay"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPhysActivity"
+        android:name="com.example.mychoiceai.FragmentPhysActivity"
+        android:label="fragment_phys_activity"
+        tools:layout="@layout/fragment_phys_activity" >
+        <action
+            android:id="@+id/action_fragmentPhysActivity_to_fragmentMainEvent"
+            app:destination="@id/fragmentMainEvent" />
+        <argument
+            android:name="badHabits"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMainEvent"
+        android:name="com.example.mychoiceai.FragmentMainEvent"
+        android:label="fragment_main_event"
+        tools:layout="@layout/fragment_main_event" >
+        <action
+            android:id="@+id/action_fragmentMainEvent_to_fragmentDateEvent"
+            app:destination="@id/fragmentDateEvent" />
+        <action
+            android:id="@+id/action_fragmentMainEvent_to_fragmentYourGoal"
+            app:destination="@id/fragmentYourGoal" />
+        <argument
+            android:name="physActivity"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDateEvent"
+        android:name="com.example.mychoiceai.FragmentDateEvent"
+        android:label="fragment_date_event"
+        tools:layout="@layout/fragment_date_event" >
+        <argument
+            android:name="event"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_fragmentDateEvent_to_fragmentYourGoal"
+            app:destination="@id/fragmentYourGoal" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentYourGoal"
+        android:name="com.example.mychoiceai.FragmentYourGoal"
+        android:label="fragment_your_goal"
+        tools:layout="@layout/fragment_your_goal" >
+        <action
+            android:id="@+id/action_fragmentYourGoal_to_fragmentRegisterDone"
+            app:destination="@id/fragmentRegisterDone" />
+        <argument android:name="mainEventLast"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMainEvent2"
+        android:name="com.example.mychoiceai.FragmentMainEvent2"
+        android:label="fragment_main_event2"
+        tools:layout="@layout/fragment_main_event2" >
+        <action
+            android:id="@+id/action_fragmentMainEvent2_to_fragmentYourGoal"
+            app:destination="@id/fragmentYourGoal" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCoach"
+        android:name="com.example.mychoiceai.FragmentCoach"
+        android:label="fragment_coach"
+        tools:layout="@layout/fragment_coach" >
+        <action
+            android:id="@+id/action_fragmentCoach_to_fragmentCharacterCoach"
+            app:destination="@id/fragmentCharacterCoach" />
+        <action
+            android:id="@+id/action_fragmentCoach_to_fragmentBeforeTraining"
+            app:destination="@id/fragmentBeforeTraining" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCharacterCoach"
+        android:name="com.example.mychoiceai.FragmentCharacterCoach"
+        android:label="fragment_character_coach"
+        tools:layout="@layout/fragment_character_coach" />
+    <fragment
+        android:id="@+id/fragmentBeforeTraining"
+        android:name="com.example.mychoiceai.FragmentBeforeTraining"
+        android:label="fragment_before_training"
+        tools:layout="@layout/fragment_before_training" >
+        <action
+            android:id="@+id/action_fragmentBeforeTraining_to_fragmentInfoCoach"
+            app:destination="@id/fragmentInfoCoach" />
+        <action
+            android:id="@+id/action_fragmentBeforeTraining_to_fragmentTraining"
+            app:destination="@id/fragmentTraining" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentInfoCoach"
+        android:name="com.example.mychoiceai.FragmentInfoCoach"
+        android:label="fragment_info_coach"
+        tools:layout="@layout/fragment_info_coach" />
+    <fragment
+        android:id="@+id/fragmentTraining"
+        android:name="com.example.mychoiceai.FragmentTraining"
+        android:label="fragment_training"
+        tools:layout="@layout/fragment_training" >
+        <action
+            android:id="@+id/action_fragmentTraining_to_fragmentTrainingDone"
+            app:destination="@id/fragmentTrainingDone" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTrainingDone"
+        android:name="com.example.mychoiceai.FragmentTrainingDone"
+        android:label="fragment_training_done"
+        tools:layout="@layout/fragment_training_done" >
+        <action
+            android:id="@+id/action_fragmentTrainingDone_to_chatActivity"
+            app:destination="@id/chatActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/chatActivity"
+        android:name="com.example.mychoiceai.ChatActivity"
+        android:label="activity_chat"
+        tools:layout="@layout/activity_chat" />
 </navigation>
