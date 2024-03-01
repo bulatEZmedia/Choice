@@ -1,5 +1,6 @@
 package com.example.mychoiceai;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
@@ -50,6 +51,13 @@ public class FragmentTraining extends Fragment {
                 blurView.setVisibility(View.GONE);
                 blurView3.setVisibility(View.GONE);
                 settings.setVisibility(View.VISIBLE);
+            }
+        });
+        goChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ChatActivity.class);
+                startActivity(intent);
             }
         });
 

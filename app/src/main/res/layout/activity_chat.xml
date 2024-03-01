@@ -6,32 +6,218 @@
     android:layout_height="match_parent"
     tools:context=".ChatActivity"
     android:background="#151718">
-    <androidx.recyclerview.widget.RecyclerView
+
+    <View
+        android:id="@+id/myRectangleView20"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-39dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/rectangle4" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
-        android:layout_above="@+id/sendMessageLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:reverseLayout="true"/>
+        android:layout_above="@+id/sendMessageLayout"
+        android:layout_below="@+id/myRectangleView20"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        app:reverseLayout="true"
+        app:stackFromEnd="false" />
 
-
-    <RelativeLayout
-        android:id="@+id/sendMessageLayout"
+    <View
+        android:id="@+id/myRectangleView19"
         android:layout_width="match_parent"
-        android:layout_height="125dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/rectangle4" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/imageView49"
+        android:text="Скала"
+        android:textColor="#F7F8FA"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView70"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/imageView49"
+        android:text="Онлайн"
+        android:textColor="#DEFA2C"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/imageView50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/skalaava" />
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/backchat" />
+
+    <ImageView
+        android:id="@+id/imageView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/yetchat" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="289dp"
+        android:layout_height="296dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="522dp"
+        android:layout_marginBottom="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView75"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:background="@drawable/rectangle9"
+            android:paddingTop="10dp"
+            android:text="Расскажи историю"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView73"
+            android:layout_width="113dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rectangle9"
+            android:paddingTop="10dp"
+            android:text="Мотивация"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.311"
+            app:layout_constraintStart_toEndOf="@+id/textView72"
+            app:layout_constraintTop_toBottomOf="@+id/textView74" />
+
+        <TextView
+            android:id="@+id/textView72"
+            android:layout_width="113dp"
+            android:layout_height="37dp"
+            android:background="@drawable/rectangle9"
+            android:paddingTop="10dp"
+            android:text="Мой прогресс"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.101"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView75" />
+
+        <TextView
+            android:id="@+id/textView74"
+            android:layout_width="113dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rectangle9"
+            android:paddingTop="10dp"
+            android:text="План на сегодня"
+            android:textAlignment="center"
+            android:textColor="#F7F8FA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.821"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sendMessageLayout"
+        android:layout_width="200dp"
+        android:layout_height="122dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
         android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView53"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lightingchat" />
+
+        <ImageView
+            android:id="@+id/imageView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/imgaddchat" />
 
         <EditText
             android:id="@+id/message"
-            android:layout_width="296dp"
-            android:layout_height="wrap_content"
+            android:layout_width="274dp"
+            android:layout_height="55dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="22dp"
-            android:layout_marginBottom="28dp"
+            android:background="@drawable/rectangle7"
             android:hint="write message"
-            android:padding="15dp" />
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.605"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507" />
 
         <ImageView
             android:id="@+id/sendMessage"
@@ -39,19 +225,13 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:layout_marginEnd="-15dp"
             android:padding="15dp"
-            android:src="@drawable/send_image" />
+            android:src="@drawable/send_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView71"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="116dp"
-            android:layout_marginBottom="0dp"
-            android:text="TextView" />
-
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>

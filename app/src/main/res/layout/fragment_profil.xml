@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentProfil"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/my_data"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="339dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="36dp"
+                android:backgroundTint="#2C2C2E"
+                android:text="Мои данные"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#F7F8FA"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView60"
+                app:strokeColor="#2C2C2E" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/then38"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="339dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2C2C2E"
+                android:text="Подписка"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#F7F8FA"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_data"
+                app:strokeColor="#2C2C2E" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/then39"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="339dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2C2C2E"
+                android:text="Напоминания"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#F7F8FA"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/then38"
+                app:strokeColor="#2C2C2E" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/help"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="339dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2C2C2E"
+                android:text="Помощь"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#F7F8FA"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/then39"
+                app:strokeColor="#2C2C2E" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/then41"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="339dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2C2C2E"
+                android:text="Smart Band"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#F7F8FA"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/help"
+                app:strokeColor="#2C2C2E" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/referral_program"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="339dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2C2C2E"
+                android:text="Реферальная программа"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#F7F8FA"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/then42"
+                app:strokeColor="#2C2C2E" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/then42"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="339dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2C2C2E"
+                android:text="Магазин Choice"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#F7F8FA"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/then41"
+                app:strokeColor="#2C2C2E" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/then44"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="339dp"
+                android:layout_height="63dp"
+                android:backgroundTint="#2C2C2E"
+                android:text="Промокод"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#F7F8FA"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/referral_program"
+                app:strokeColor="#2C2C2E" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/feedback"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="339dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2C2C2E"
+                android:text="Оставить отзыв"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#F7F8FA"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/then44"
+                app:strokeColor="#2C2C2E" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/then46"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="98dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="44dp"
+                android:background="@null"
+                android:text="Выйти"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#C50000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/feedback" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/then47"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="166dp"
+                android:layout_height="44dp"
+                android:background="@null"
+                android:text="Удалить аккаунт"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#F7F8FA"
+                android:textSize="14sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/then46" />
+
+            <ImageView
+                android:id="@+id/imageView65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/my_data"
+                app:layout_constraintEnd_toEndOf="@+id/my_data"
+                app:layout_constraintTop_toTopOf="@+id/my_data"
+                app:layout_constraintVertical_bias="0.468" />
+
+            <ImageView
+                android:id="@+id/imageView66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/then38"
+                app:layout_constraintEnd_toEndOf="@+id/then38"
+                app:layout_constraintTop_toTopOf="@+id/then38" />
+
+            <ImageView
+                android:id="@+id/imageView68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/help"
+                app:layout_constraintEnd_toEndOf="@+id/help"
+                app:layout_constraintTop_toTopOf="@+id/help" />
+
+            <ImageView
+                android:id="@+id/imageView69"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/then41"
+                app:layout_constraintEnd_toEndOf="@+id/then41"
+                app:layout_constraintTop_toTopOf="@+id/then41" />
+
+            <ImageView
+                android:id="@+id/imageView70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/then42"
+                app:layout_constraintEnd_toEndOf="@+id/then42"
+                app:layout_constraintTop_toTopOf="@+id/then42" />
+
+            <ImageView
+                android:id="@+id/imageView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/referral_program"
+                app:layout_constraintEnd_toEndOf="@+id/referral_program"
+                app:layout_constraintTop_toTopOf="@+id/referral_program" />
+
+            <ImageView
+                android:id="@+id/imageView72"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/then44"
+                app:layout_constraintEnd_toEndOf="@+id/then44"
+                app:layout_constraintTop_toTopOf="@+id/then44" />
+
+            <ImageView
+                android:id="@+id/imageView73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/feedback"
+                app:layout_constraintEnd_toEndOf="@+id/feedback"
+                app:layout_constraintTop_toTopOf="@+id/feedback" />
+
+            <ImageView
+                android:id="@+id/imageView60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/profilepro"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView136"
+                android:layout_width="57dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="20dp"
+                android:text="Подписка"
+                android:textColor="#54585C"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView60"
+                app:layout_constraintTop_toBottomOf="@+id/textView135" />
+
+            <TextView
+                android:id="@+id/textView134"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Евгения"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.224"
+                app:layout_constraintStart_toEndOf="@+id/imageView60"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView137"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="До 18.03.2025"
+                android:textColor="#F7F8FA"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView60"
+                app:layout_constraintTop_toBottomOf="@+id/textView136" />
+
+            <ImageView
+                android:id="@+id/imageView64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/avatarpro"
+                app:layout_constraintEnd_toEndOf="@+id/imageView60"
+                app:layout_constraintHorizontal_bias="0.285"
+                app:layout_constraintStart_toStartOf="@+id/imageView60"
+                app:layout_constraintTop_toTopOf="@+id/imageView60" />
+
+            <TextView
+                android:id="@+id/textView135"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="Бутаева"
+                android:textColor="#DEFA2C"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.014"
+                app:layout_constraintStart_toEndOf="@+id/imageView60"
+                app:layout_constraintTop_toBottomOf="@+id/textView134" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:checked="false"
+                app:layout_constraintBottom_toBottomOf="@+id/then39"
+                app:layout_constraintEnd_toEndOf="@+id/then39"
+                app:layout_constraintTop_toTopOf="@+id/then39"
+                app:layout_constraintVertical_bias="0.444" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

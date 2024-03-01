@@ -12,8 +12,9 @@
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="620dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -22,7 +23,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/then29"
+                android:id="@+id/begin_to_training"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="383dp"
                 android:layout_height="63dp"
@@ -150,6 +151,7 @@
         android:id="@+id/myRectangleView11"
         android:layout_width="match_parent"
         android:layout_height="103dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/rectangle4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

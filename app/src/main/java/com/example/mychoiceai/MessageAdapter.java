@@ -33,6 +33,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
     public void onBindViewHolder(@NonNull MessageAdapter.MessageViewHolder holder, int position) {
         MessageModel messageModel = modelArrayList.get(position);
         holder.message_title.setText(messageModel.message);
+        holder.date_title.setText(messageModel.date);
     }
 
     @Override
@@ -42,10 +43,11 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
 
     public class MessageViewHolder extends RecyclerView.ViewHolder{
         TextView message_title;
+        TextView date_title;
 
         public MessageViewHolder(@NonNull View itemView){
             super(itemView);
-
+            date_title = itemView.findViewById(R.id.date_item);
             message_title = itemView.findViewById(R.id.message_item);
         }
     }

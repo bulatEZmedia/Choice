@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentReferralProgram"
+    android:background="@drawable/background">
+
+    <View
+        android:id="@+id/myRectangleView30"
+        android:layout_width="350dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <View
+        android:id="@+id/myRectangleView31"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myRectangleView30" />
+
+    <ImageButton
+        android:id="@+id/imageButton33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:src="@drawable/iconbackvector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView146"
+        android:layout_width="187dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="60dp"
+        android:text="Реферальная программа"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="350dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle3"
+        android:button="@drawable/custom_checkbox_referral_program"
+        android:layoutDirection="rtl"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="xxx-dsfre-32457"
+        android:textColor="#F7F8FA"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView146" />
+
+    <TextView
+        android:id="@+id/textView147"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Уникальный код"
+        android:textColor="#AAAFB4"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toTopOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/textView148"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Описание"
+        android:textColor="#F7F8FA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView30"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView30"
+        app:layout_constraintTop_toTopOf="@+id/myRectangleView30" />
+
+    <TextView
+        android:id="@+id/textView157"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Как стать рефералом"
+        android:textColor="#F7F8FA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView31"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView31"
+        app:layout_constraintTop_toTopOf="@+id/myRectangleView31" />
+
+    <TextView
+        android:id="@+id/textView149"
+        android:layout_width="221dp"
+        android:layout_height="45dp"
+        android:text="Участвуй в нашей Реферальной Программе:"
+        android:textColor="#AAAFB4"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView30"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView148" />
+
+    <TextView
+        android:id="@+id/textView151"
+        android:layout_width="11dp"
+        android:layout_height="16dp"
+        android:text="● "
+        android:textColor="#AAAFB4"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView30"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView149" />
+
+    <TextView
+        android:id="@+id/textView158"
+        android:layout_width="11dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="12dp"
+        android:text="● "
+        android:textColor="#AAAFB4"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView31"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView157" />
+
+    <TextView
+        android:id="@+id/textView160"
+        android:layout_width="11dp"
+        android:layout_height="16dp"
+        android:text="● "
+        android:textColor="#AAAFB4"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView31"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView159" />
+
+    <TextView
+        android:id="@+id/textView162"
+        android:layout_width="11dp"
+        android:layout_height="16dp"
+        android:text="● "
+        android:textColor="#AAAFB4"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView31"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView161" />
+
+    <TextView
+        android:id="@+id/textView153"
+        android:layout_width="11dp"
+        android:layout_height="16dp"
+        android:text="● "
+        android:textColor="#AAAFB4"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView30"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView152" />
+
+    <TextView
+        android:id="@+id/textView155"
+        android:layout_width="11dp"
+        android:layout_height="16dp"
+        android:text="● "
+        android:textColor="#AAAFB4"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView30"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView154" />
+
+    <TextView
+        android:id="@+id/textView152"
+        android:layout_width="264dp"
+        android:layout_height="65dp"
+        android:text="Пригласи своих друзей, делись с ними уникальным опытом нашего сервиса, и оба вы получите приветственные бонусы. "
+        android:textColor="#AAAFB4"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView30"
+        app:layout_constraintHorizontal_bias="0.337"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView149" />
+
+    <TextView
+        android:id="@+id/textView156"
+        android:layout_width="262dp"
+        android:layout_height="46dp"
+        android:text="Будь частью Choice и развивайся вместе с друзьями!"
+        android:textColor="#AAAFB4"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView30"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView154" />
+
+    <TextView
+        android:id="@+id/textView159"
+        android:layout_width="245dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="12dp"
+        android:text="Скопируйте ваш персональный код"
+        android:textColor="#AAAFB4"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView31"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView157" />
+
+    <TextView
+        android:id="@+id/textView161"
+        android:layout_width="255dp"
+        android:layout_height="28dp"
+        android:text="Поделитесь своим кодом с друзьями"
+        android:textColor="#AAAFB4"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView31"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView159" />
+
+    <TextView
+        android:id="@+id/textView163"
+        android:layout_width="246dp"
+        android:layout_height="40dp"
+        android:text="Человек должен ввести код в поле “Промокод”"
+        android:textColor="#AAAFB4"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView31"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView31"
+        app:layout_constraintTop_toBottomOf="@+id/textView161" />
+
+    <TextView
+        android:id="@+id/textView154"
+        android:layout_width="272dp"
+        android:layout_height="104dp"
+        android:text="Чем больше друзей присоединится, тем больше возможностей для вас: эксклюзивные акции, бесплатные тренировки и множество других приятных сюрпризов ждут тебя и твоих близких. "
+        android:textColor="#AAAFB4"
+        app:layout_constraintEnd_toEndOf="@+id/myRectangleView30"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView30"
+        app:layout_constraintTop_toBottomOf="@+id/textView152" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

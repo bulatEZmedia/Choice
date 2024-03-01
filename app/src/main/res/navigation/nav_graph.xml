@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragmentTrainingDone">
+    app:startDestination="@id/fragmentProfil">
 
     <fragment
         android:id="@+id/fragmentGender"
@@ -268,6 +268,9 @@
         <action
             android:id="@+id/action_fragmentCoach_to_fragmentBeforeTraining"
             app:destination="@id/fragmentBeforeTraining" />
+        <action
+            android:id="@+id/action_fragmentCoach_to_chatActivity"
+            app:destination="@id/chatActivity" />
     </fragment>
     <fragment
         android:id="@+id/fragmentCharacterCoach"
@@ -304,14 +307,177 @@
         android:id="@+id/fragmentTrainingDone"
         android:name="com.example.mychoiceai.FragmentTrainingDone"
         android:label="fragment_training_done"
-        tools:layout="@layout/fragment_training_done" >
-        <action
-            android:id="@+id/action_fragmentTrainingDone_to_chatActivity"
-            app:destination="@id/chatActivity" />
-    </fragment>
+        tools:layout="@layout/fragment_training_done" />
     <activity
         android:id="@+id/chatActivity"
         android:name="com.example.mychoiceai.ChatActivity"
         android:label="activity_chat"
         tools:layout="@layout/activity_chat" />
+    <activity
+        android:id="@+id/activityPlanMain"
+        android:name="com.example.mychoiceai.ActivityPlanMain"
+        android:label="activity_plan_main"
+        tools:layout="@layout/activity_plan_main" />
+    <fragment
+        android:id="@+id/fragmentPlanMain2"
+        android:name="com.example.mychoiceai.FragmentPlanMain"
+        android:label="fragment_plan_main"
+        tools:layout="@layout/fragment_plan_main" >
+        <action
+            android:id="@+id/action_fragmentPlanMain2_to_fragmentAddFood"
+            app:destination="@id/fragmentAddFood" />
+        <action
+            android:id="@+id/action_fragmentPlanMain2_to_fragmentBeforeTraining"
+            app:destination="@id/fragmentBeforeTraining" />
+        <action
+            android:id="@+id/action_fragmentPlanMain2_to_fragmenWater"
+            app:destination="@id/fragmenWater" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddFood"
+        android:name="com.example.mychoiceai.FragmentAddFood"
+        android:label="fragment_add_food"
+        tools:layout="@layout/fragment_add_food" >
+        <action
+            android:id="@+id/action_fragmentAddFood_to_fragmentAddCalories"
+            app:destination="@id/fragmentAddCalories" />
+        <action
+            android:id="@+id/action_fragmentAddFood_to_fragmentPlanMain2"
+            app:destination="@id/fragmentPlanMain2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddCalories"
+        android:name="com.example.mychoiceai.FragmentAddCalories"
+        android:label="fragment_add_calories"
+        tools:layout="@layout/fragment_add_calories" >
+        <action
+            android:id="@+id/action_fragmentAddCalories_to_fragmentPlanMain2"
+            app:destination="@id/fragmentPlanMain2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmenWater"
+        android:name="com.example.mychoiceai.FragmentWater"
+        android:label="fragment_fragmen_water"
+        tools:layout="@layout/fragment_fragmen_water" >
+        <action
+            android:id="@+id/action_fragmenWater_to_fragmentPlanMain2"
+            app:destination="@id/fragmentPlanMain2" />
+    </fragment>
+    <activity
+        android:id="@+id/activityWatch"
+        android:name="com.example.mychoiceai.ActivityWatch"
+        android:label="activity_watch"
+        tools:layout="@layout/activity_watch" />
+    <fragment
+        android:id="@+id/fragmentThoughts"
+        android:name="com.example.mychoiceai.FragmentThoughts"
+        android:label="fragment_thoughts"
+        tools:layout="@layout/fragment_thoughts" />
+    <fragment
+        android:id="@+id/fragmentProgress"
+        android:name="com.example.mychoiceai.FragmentProgress"
+        android:label="fragment_progress"
+        tools:layout="@layout/fragment_progress" >
+        <action
+            android:id="@+id/action_fragmentProgress_to_fragmentHeightProgress"
+            app:destination="@id/fragmentHeightProgress" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHeightProgress"
+        android:name="com.example.mychoiceai.FragmentHeightProgress"
+        android:label="fragment_height_progress"
+        tools:layout="@layout/fragment_height_progress" >
+        <action
+            android:id="@+id/action_fragmentHeightProgress_to_fragmentWeightProgress"
+            app:destination="@id/fragmentWeightProgress" />
+        <action
+            android:id="@+id/action_fragmentHeightProgress_to_fragmentProgress"
+            app:destination="@id/fragmentProgress" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentWeightProgress"
+        android:name="com.example.mychoiceai.FragmentWeightProgress"
+        android:label="fragment_weight_progress"
+        tools:layout="@layout/fragment_weight_progress" >
+        <action
+            android:id="@+id/action_fragmentWeightProgress_to_fragmentProgress"
+            app:destination="@id/fragmentProgress" />
+        <action
+            android:id="@+id/action_fragmentWeightProgress_to_fragmentHeightProgress"
+            app:destination="@id/fragmentHeightProgress" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfil"
+        android:name="com.example.mychoiceai.FragmentProfil"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/action_fragmentProfil_to_fragmentMyData"
+            app:destination="@id/fragmentMyData" />
+        <action
+            android:id="@+id/action_fragmentProfil_to_fragmentFeedback2"
+            app:destination="@id/fragmentFeedback" />
+        <action
+            android:id="@+id/action_fragmentProfil_to_fragmentHelp2"
+            app:destination="@id/fragmentHelp" />
+        <action
+            android:id="@+id/action_fragmentProfil_to_fragmentReferralProgram"
+            app:destination="@id/fragmentReferralProgram" />
+        <action
+            android:id="@+id/action_fragmentProfil_to_fragmentPromocode"
+            app:destination="@id/fragmentPromocode" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMyData"
+        android:name="com.example.mychoiceai.FragmentMyData"
+        android:label="fragment_my_data"
+        tools:layout="@layout/fragment_my_data" >
+        <action
+            android:id="@+id/action_fragmentMyData_to_fragmentProfil"
+            app:destination="@id/fragmentProfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFeedback"
+        android:name="com.example.mychoiceai.FragmentFeedback"
+        android:label="fragment_feedback"
+        tools:layout="@layout/fragment_feedback" >
+        <action
+            android:id="@+id/action_fragmentFeedback_to_fragmentFeedbackSent"
+            app:destination="@id/fragmentFeedbackSent" />
+        <action
+            android:id="@+id/action_fragmentFeedback_to_fragmentProfil"
+            app:destination="@id/fragmentProfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFeedbackSent"
+        android:name="com.example.mychoiceai.FragmentFeedbackSent"
+        android:label="fragment_feedback_sent"
+        tools:layout="@layout/fragment_feedback_sent" >
+        <action
+            android:id="@+id/action_fragmentFeedbackSent_to_fragmentProfil"
+            app:destination="@id/fragmentProfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHelp"
+        android:name="com.example.mychoiceai.FragmentHelp"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_fragmentHelp_to_fragmentProfil"
+            app:destination="@id/fragmentProfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentReferralProgram"
+        android:name="com.example.mychoiceai.FragmentReferralProgram"
+        android:label="fragment_referral_program"
+        tools:layout="@layout/fragment_referral_program" >
+        <action
+            android:id="@+id/action_fragmentReferralProgram_to_fragmentProfil"
+            app:destination="@id/fragmentProfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPromocode"
+        android:name="com.example.mychoiceai.FragmentPromocode"
+        android:label="fragment_promocode"
+        tools:layout="@layout/fragment_promocode" />
 </navigation>

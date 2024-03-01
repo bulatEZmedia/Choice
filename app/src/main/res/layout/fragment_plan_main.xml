@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151718"
+    tools:context=".FragmentPlanMain">
+
+    <View
+        android:id="@+id/myRectangleView23"
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/steps_plan_main" />
+
+    <TextView
+        android:id="@+id/textView98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Coach"
+        android:textColor="#54585C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton24" />
+
+    <ImageButton
+        android:id="@+id/imageButton20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:src="@drawable/progressicon"
+        app:layout_constraintStart_toEndOf="@+id/imageButton24"
+        app:layout_constraintTop_toBottomOf="@+id/steps_plan_main" />
+
+    <ImageButton
+        android:id="@+id/imageButton24"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:src="@drawable/iconchattt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/steps_plan_main" />
+
+    <ImageButton
+        android:id="@+id/imageButton25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:background="@null"
+        android:src="@drawable/iconmoree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/steps_plan_main" />
+
+    <TextView
+        android:id="@+id/textView96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Прогресс"
+        android:textColor="#54585C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton20" />
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Больше"
+        android:textColor="#54585C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton25" />
+
+    <TextView
+        android:id="@+id/textView97"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Тренировки"
+        android:textColor="#54585C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton21" />
+
+    <TextView
+        android:id="@+id/textView99"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="План"
+        android:textColor="#DEFA2C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton23" />
+
+    <ImageButton
+        android:id="@+id/imageButton21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:background="@null"
+        android:src="@drawable/trainingicon"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton24"
+        app:layout_constraintTop_toBottomOf="@+id/steps_plan_main" />
+
+    <ImageButton
+        android:id="@+id/imageButton23"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rectangle5"
+        android:src="@drawable/iconplannn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/steps_plan_main" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Персональный"
+        android:textColor="#AAAFB4"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView56"
+        android:layout_width="353dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/forviewpager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+    <CheckBox
+        android:id="@+id/thoughts"
+        android:layout_width="383dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rectangle2"
+        android:button="@drawable/custom_checkbox"
+        android:drawableLeft="@drawable/thoughts"
+        android:layoutDirection="ltr"
+        android:paddingLeft="15dp"
+        android:text="     Мысль на день"
+        android:textAlignment="textStart"
+        android:textColor="#F7F8FA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView56" />
+
+    <CheckBox
+        android:id="@+id/training_plan_main"
+        android:layout_width="383dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/rectangle2"
+        android:button="@drawable/custom_checkbox"
+        android:drawableLeft="@drawable/trainingplanmain"
+        android:layoutDirection="ltr"
+        android:paddingLeft="15dp"
+        android:text="     Тренировки"
+        android:textAlignment="textStart"
+        android:textColor="#F7F8FA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thoughts" />
+
+    <CheckBox
+        android:id="@+id/add_food_plan_main"
+        android:layout_width="383dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle2"
+        android:button="@drawable/custom_checkbox"
+        android:drawableLeft="@drawable/addfoodplpanmain"
+        android:layoutDirection="ltr"
+        android:paddingLeft="15dp"
+        android:text="     Добавить еду"
+        android:textAlignment="textStart"
+        android:textColor="#F7F8FA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/training_plan_main" />
+
+    <CheckBox
+        android:id="@+id/treker_water_plan_main"
+        android:layout_width="383dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle2"
+        android:button="@drawable/custom_checkbox"
+        android:drawableLeft="@drawable/trekerwaterplanmain"
+        android:layoutDirection="ltr"
+        android:paddingLeft="15dp"
+        android:text="     Трекер воды"
+        android:textAlignment="textStart"
+        android:textColor="#F7F8FA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_food_plan_main" />
+
+    <CheckBox
+        android:id="@+id/steps_plan_main"
+        android:layout_width="383dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle2"
+        android:button="@drawable/custom_checkbox"
+        android:drawableLeft="@drawable/stepsplanmain"
+        android:layoutDirection="ltr"
+        android:paddingLeft="15dp"
+        android:text="     Шаги"
+        android:textAlignment="textStart"
+        android:textColor="#F7F8FA"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/treker_water_plan_main" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="план дня"
+        android:textColor="#DEFA2C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+    <TextView
+        android:id="@+id/textView101"
+        android:layout_width="92dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="60dp"
+        android:text="0 из 1789 ккал"
+        android:textColor="#AAAFB4"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/training_plan_main" />
+
+    <TextView
+        android:id="@+id/textView102"
+        android:layout_width="75dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="140dp"
+        android:text="О из 2000мл"
+        android:textColor="#AAAFB4"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/training_plan_main" />
+
+    <TextView
+        android:id="@+id/textView103"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="999/20000"
+        android:textColor="#AAAFB4"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/training_plan_main" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

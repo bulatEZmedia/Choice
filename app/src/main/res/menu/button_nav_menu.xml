@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/plan"
+        android:title="Plan"
+        android:icon="@drawable/iconplan"/>
+    <item android:title="Watch" />
+    <item android:title="Coach" />
+    <item android:title="Progress" />
+    <item android:title="More" />
+</menu>

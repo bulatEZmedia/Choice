@@ -12,25 +12,20 @@
 
 
         <TextView
-            android:id="@+id/textView70"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <TextView
             android:id="@+id/message_item"
-            android:layout_width="103dp"
+            android:layout_width="156dp"
             android:layout_height="47dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="289dp"
+            android:layout_marginStart="236dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="0dp"
             android:layout_marginEnd="19dp"
             android:layout_marginBottom="6dp"
-            android:background="@drawable/rectangle6"
+            android:background="@drawable/rectangle8"
+            android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="TextView"
             android:textAlignment="textStart" />
@@ -42,11 +37,24 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="377dp"
-            android:layout_marginTop="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="376dp"
+            android:layout_marginTop="27dp"
             android:layout_marginEnd="22dp"
+            android:layout_marginBottom="17dp"
             app:srcCompat="@drawable/iconsms" />
 
+        <TextView
+            android:id="@+id/date_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="16dp"
+            android:text="TextView" />
 
 
     </RelativeLayout>
